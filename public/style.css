@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+
+  background: linear-gradient(180deg, #500D87 0%, #2C064B 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-family: 'Inconsolata', monospace;
+  font-size: 28px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 60px;
+  gap: 20px;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;          
+  flex-wrap: wrap;    
+}
+
+.nav-buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: #11001C;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.card {
+  width: 30%;
+  padding: 20px 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: -1px 0 8px rgba(168, 85, 247, 0.2);
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 6vw;
+}
+
+.hero-left {
+  max-width: 50%;
+}
+
+.subtitle {
+  opacity: 0.7;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin: 10px 0 20px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.hero-right img {
+  width: 350px;
+  filter: drop-shadow(0 0 30px #9333ea);
+  border-radius: 0 0 50% 50%;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+}
+
+.card {
+  width: 30%;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.progress-box {
+  margin: 40px 80px;
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.ranking-img {
+  width: 350px;        
+  height: auto;
+  border-radius: 20px;
+}
+
+
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left {
+    max-width: 100%;
+  }
+
+ .nav-buttons {
+    margin-top: 15px;
+    justify-content: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+.logo {
+    margin-bottom: 10px;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .progress-box {
+    margin: 20px auto;
+    justify-content: center;
+  }
+
+  .hero,
+  .features,
+  .progress-box {
+    padding: 20px 16px;
+  }
+
+  .hero-right img,
+  .ranking-img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+}
